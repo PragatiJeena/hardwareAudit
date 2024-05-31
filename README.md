@@ -6,28 +6,46 @@ This script audits the hardware specifications of a RHEL system and highlights d
 #########Features###########3
 
 ---->Server Uptime
+
 ---->Last Server Reboot Timestamp
+
 ----> Server Local Time Zone
+
 ----> Last 10 Installed Packages with Dates
+
 ----> OS Version
+
 ----> Kernel Version
+
 ----->CPU - Virtual Cores
+
 ----> CPU - Clock Speed
+
 ----> CPU - Architecture
+
 ----> Disk - Mounted/Unmounted Volumes, Type, Storage
+
 ----->Private and Public IP
+
 ----> Private and Public DNS or Hostname
+
 ----> Networking - Bandwidth
+
 ----> Networking - OS Firewall (Allowed Ports & Protocols)
+
 ----> Networking - Network Firewall (Allowed Ports & Protocols)
+
 ----> CPU - Utilization
+
 ----> RAM - Utilization
+
 ---->Storage Utilization
+
 ---->Current User Password Expiry
 
 ## Prerequisites
 
-Ensure you have the following commands available:
+for running this particular script you need to use these commands
 - `uptime`
 - `last`
 - `timedatectl`
@@ -61,8 +79,5 @@ Ensure you have the following commands available:
 
 The script prints the audited hardware specifications to the console, highlighting any deviations from expected specifications.
 
-## Notes
 
-- The script uses `sudo` for some commands that require elevated permissions.
-- Bandwidth usage requires running `iftop` manually as it provides real-time data.
 
